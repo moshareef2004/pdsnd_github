@@ -94,9 +94,9 @@ def time_stats(df):
               'July', 'August', 'September', 'October', 'November',
               'December']
 
-    most_common_mon = df['month'].mode()[0]
-    most_common_mon_name = months[most_common_mon  - 1]
-    print(f'most_common_mon: {most_common_mon_name}')
+    most_common_month = df['month'].mode()[0]
+    most_common_month_name = months[most_common_month  - 1]
+    print(f'most_common_mon: {most_common_month_name}')
 
     days = ['Saturday', 'Sunday', 'monday', 'tuesday', 'wednesday',
             'thursday', 'friday']
@@ -106,7 +106,7 @@ def time_stats(df):
 
     df['hour'] = df['Start Time'].dt.hour
     most_comm_strt_hour = df['hour'].mode()[0]
-    print(f'most_comm_strt_hour: {most_comm_strt_hour} ')
+    print(f'most_comm_strt_hour: {most_comm_start_hour} ')
 
     print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
@@ -128,14 +128,14 @@ def station_stats(df):
         print('No Data!')
         return;
 
-    most_cmn_strt_stn = df['Start Station'].mode()[0]
+    most_common_start_station = df['Start Station'].mode()[0]
     print(f'most common start station: {most_cmn_strt_stn}')
 
-    most_cmn_end_stn = df['End Station'].mode()[0]
-    print(f'most common end station: {most_cmn_end_stn} ')
+    most_common_end_station = df['End Station'].mode()[0]
+    print(f'most common end station: {most_cmn_end_station} ')
 
-    most_cmn_trip = df.groupby(['Start Station', 'End Station']).size().idxmax()
-    print(f"most common trip: {most_cmn_trip}")
+    most_common_trip = df.groupby(['Start Station', 'End Station']).size().idxmax()
+    print(f"most common trip: {most_common_trip}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
