@@ -18,6 +18,7 @@ def get_filters():
                  to filter the bikeshare data.
 
       """
+
     print('Hello! Let\'s explore some US bikeshare data!')
     while True:
         city = input('What city are you looking for? chicago, '
@@ -45,6 +46,7 @@ def get_filters():
         else:
             print('That\'s not a valid day!')
         print('-'*40)
+
     return city, month, day
 
 def load_data(city, month, day):
@@ -55,6 +57,7 @@ def load_data(city, month, day):
             - month.
             - day name.
    """
+
    df = pd.read_csv(CITY_DATA[city])
    df['Start Time'] = pd.to_datetime(df['Start Time'])
    df['month'] = df['Start Time'].dt.month
@@ -169,7 +172,6 @@ def user_stats(df):
             purpose: generate some user statistics.
     """
 
-
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
@@ -181,8 +183,6 @@ def user_stats(df):
     print("user types:")
     for index, value in user_types.items():
         print(f'{index}    {value}')
-
-
 
     if 'Gender' in user_types:
         gender_counts = df['Gender'].value_counts()
@@ -213,10 +213,6 @@ def display_data_rows(df):
         if start >=  len(df):
             print('End of data reached')
             break;
-
-
-
-
 
 def main():
     """
