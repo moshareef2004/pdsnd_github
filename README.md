@@ -1,17 +1,13 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# Bikeshare with Pandas
 
-### Date created
-Include the date you created this project and README file.
+## Summary
 
-### Project Title
-Replace the Project Title
+This project uses Python's `pandas` library to read data from tables and uncover interesting insights and patterns in the data.
 
-### Description
-Describe what your project is about and what it does
+## What I Apply in This Project
 
-### Files used
-Include the files used
+- **Loading Data**: Reading large datasets, typically provided in CSV format, into pandas DataFrames.
+- **Data Cleaning**: Handling missing values, outliers, and correcting data types to prepare the data for analysis.
+- **Exploratory Data Analysis (EDA)**: Analyzing the data to discover patterns and trends, including calculating statistics and grouping data by specific criteria.
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
