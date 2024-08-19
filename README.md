@@ -4,7 +4,7 @@
 
 This project uses Python's `pandas` library to read data from tables and uncover interesting insights and patterns in the data.
 
-## What I Apply in This Project
+## project main focus
 
 - **Loading Data**: Reading large datasets, typically provided in CSV format, into pandas DataFrames.
 - **Data Cleaning**: Handling missing values, outliers, and correcting data types to prepare the data for analysis.
