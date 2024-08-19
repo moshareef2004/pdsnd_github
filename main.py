@@ -10,11 +10,11 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_filters():
     """
         Returns:
-          city  - string : The selected city.
-          month - string : The selected month.
-          day   - string : The selected day.
+          city  -> string : The selected city.
+          month -> string : The selected month.
+          day   -> string : The selected day.
 
-        purpose: allows the user to select a city, month, and day
+        purpose: allows the user to take a city, month, and day
                  to filter the bikeshare data.
 
       """
